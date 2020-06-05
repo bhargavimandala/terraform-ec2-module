@@ -1,7 +1,7 @@
 # Security Group Creation
 resource "aws_security_group" "ec2_sg" {
   name   = "${var.product}.${var.environment}-ec2_sg"
-  vpc_id = "${aws_vpc.vpc.id}"
+  vpc_id = "${var.vpc_id}"
 
    ingress {
     description = "ec2 sg"

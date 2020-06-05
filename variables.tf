@@ -4,7 +4,7 @@ variable "ami" {}
 variable "instance" {}
 variable "product" {}
 variable "environment" {}
-
+variable "subnet" {}
  variable "ec2_delete_root_volume_on_termination" {
   description = "boolean the root volume deletes on termination of the instance"
   default = "true"
