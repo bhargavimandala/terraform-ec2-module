@@ -5,6 +5,7 @@ variable "instance" {}
 variable "product" {}
 variable "environment" {}
 variable "subnet" {}
+variable "vpc_id" {}
  variable "ec2_delete_root_volume_on_termination" {
   description = "boolean the root volume deletes on termination of the instance"
   default = "true"
